@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "http://127.0.0.1:1111/"
+base_url = "https://voidofideasd.github.io/str-nky-lol/"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -17,6 +17,6 @@ menu = [
     { url = "$BASE_URL/about", name = "O táboře" },
     { url = "$BASE_URL/games", name = "Oblíbené hry" },
     { url = "$BASE_URL/projekt", name = "O projektu" },
-    { url = "http://localhost:5000/", name = "Přihláška" },
+    { url = "$BASE_URL/prihlaska", name = "Přihláška" },
 
 ]
