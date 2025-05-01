@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://voidofideasd.github.io/str-nky-lol/sitemap.xml
