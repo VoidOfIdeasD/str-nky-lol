@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/main.css">
+
+    {% block head %}{% endblock head %}
+    <link rel="stylesheet" href="{{ get_url(path="css/bootstrap.min.css") }}">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Background Image</title>
+    <style>
+        header {
+            background-image: url(https://st4.depositphotos.com/1890375/25350/v/450/depositphotos_253501164-stock-illustration-seamless-forest-landscape.jpg);
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="/" class="btn btn-primary"><strong>Hlavní menu</strong></a>
+          </li>
+        </ul>
+        <ul class="nav">
+          {% for item in config.extra.menu %}
+            <li class="nav-item">
+              <a href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) | safe }}" class="btn btn-secondary">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {% block content %} {% endblock %}
+    </main>
+
+    <footer>
+      <b>Kontakt: </b> vit.st@volny.cz
+    </footer>
+
+    <script src="{{ get_url(path="js/bootstrap.min.js") }}"></script>
+  </body>
+</html>

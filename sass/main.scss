@@ -1,0 +1,139 @@
+$primary: #183059;
+$background: #F6F4F3;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff; 
+    color: #333; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(https://st4.depositphotos.com/1890375/25350/v/450/depositphotos_253501164-stock-illustration-seamless-forest-landscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    text-align: center;
+    color: #fff; 
+    max-width: 48rem;
+    min-height: 14vh;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+}
+
+.nav-item a {
+    color: greenyellow; 
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    background-color: whitesmoke; 
+    width: 80%; 
+    max-width: 800px;
+    min-height: 800px; 
+    margin: 20px auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 15px;
+    bottom: 0;
+    width: 100%;
+}
+main {
+    max-width: 48rem;
+
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: underline dotted;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: $primary;
+    }
+}
+
+code {
+    background-color: rgba($primary, .1);
+}
+
+table {
+    min-width: 12rem;
+
+    border: 1px solid $primary;
+    border-collapse: collapse;
+
+    th, td {
+        border: 1px solid $primary;
+
+        padding: .2rem .4rem;
+    }
+}
+
+blockquote {
+    position: relative;
+
+    margin: 1rem 3rem;
+
+    &::before {
+        content: "";
+
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -3rem;
+
+        width: 4px;
+        height: 100%;
+
+        background-color: rgba($primary, .4);
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.color-box {
+    width: 2rem;
+    height: 2rem;
+
+    margin-bottom: 1rem;
+}
