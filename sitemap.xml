@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://127.0.0.1:1111/</loc>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:1111/about/</loc>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:1111/games/</loc>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:1111/games/lov/</loc>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:1111/games/palermo/</loc>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:1111/games/sipky/</loc>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:1111/games/vlajkovana/</loc>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:1111/projekt/</loc>
+    </url>
+</urlset>
